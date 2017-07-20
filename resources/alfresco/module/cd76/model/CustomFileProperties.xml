@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model name="customPropertiesFile:customFile" xmlns="http://www.alfresco.org/model/dictionary/1.0">   
+	<description>Custom Metadatas File</description>
+	<author></author>
+	<version>1.0</version>
+	<imports>
+		<import uri="http://www.alfresco.org/model/dictionary/1.0" prefix="d"/>
+		<import uri="http://www.alfresco.org/model/content/1.0" prefix="cm"/>
+	</imports>
+	<namespaces>
+		<namespace uri="customPropertiesFile" prefix="customPropertiesFile"/>
+	</namespaces>
+	<types>
+		<type name="customPropertiesFile:CustomFile">
+			<title>Custom File</title>
+            <parent>cm:content</parent>
+		</type>
+	</types>
+	<aspects>
+		<aspect name="customPropertiesFile:CustomMetadatasFile">
+			<title>Metadatas File</title>
+			<properties>
+				<property name="customPropertiesFile:typeDoc">
+					<title>TypeDoc</title>
+					<type>d:text</type>
+				</property>
+			</properties>
+		</aspect>
+	</aspects>
+</model>

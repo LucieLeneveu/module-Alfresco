@@ -1,0 +1,16 @@
+<webscript>
+    <shortname>Classement</shortname>
+    <description>Webscript Plan de Classement</description>
+    <url>/fr/cd76/pdc/updateClassement?path={path}</url>
+	<format default="html" />
+	<authentication>admin</authentication>
+    <family>CD76 ADMIN</family>
+	<args>
+		<arg>
+		  <name>path</name>
+		  <description>Path of the repository to update</description>
+		</arg>
+	</args>
+
+  <formdata multipart-processing="false" />
+</webscript>

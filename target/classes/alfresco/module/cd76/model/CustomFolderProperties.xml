@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model name="customPropertiesFolder:customFolder" xmlns="http://www.alfresco.org/model/dictionary/1.0">   
+	<description>Custom Metadatas Folder</description>
+	<author></author>
+	<version>1.0</version>
+	<imports>
+		<import uri="http://www.alfresco.org/model/dictionary/1.0" prefix="d"/>
+		<import uri="http://www.alfresco.org/model/content/1.0" prefix="cm"/>
+	</imports>
+	<namespaces>
+		<namespace uri="customPropertiesFolder" prefix="customPropertiesFolder"/>
+	</namespaces>
+	<types>
+		<type name="customPropertiesFolder:CustomFolder">
+			<title>Custom Folder</title>
+            <parent>cm:folder</parent>
+		</type>
+	</types>
+	<aspects>
+		<aspect name="customPropertiesFolder:CustomMetadatasFolder">
+			<title>Metadatas Folder</title>
+			<properties>
+				<property name="customPropertiesFolder:cdr">
+					<title>Cdr</title>
+					<type>d:text</type>
+				</property>
+				<property name="customPropertiesFolder:referent">
+					<title>Referent</title>
+					<type>d:text</type>
+				</property>
+				<property name="customPropertiesFolder:procedure">
+					<title>Procedure</title>
+					<type>d:text</type>
+				</property>
+			</properties>
+		</aspect>
+	</aspects>
+</model>
